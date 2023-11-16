@@ -69,18 +69,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## Steps to start the Website
+## `Steps to start the Website`
 
 download the project in your local environment
 
-```key:{your key}
+key:{your key}
 replace key with your key from stable diffusion key
 
 run npm run start:frontend to start frontend
 
 run npm run start:backend to start backend
 
-### Contributing
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+```
+
 ```
