@@ -19,24 +19,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage }).single("file");
 
-// const option = {
-//   method: "POST",
-//   url: "https://stablediffusionapi.com/api/v3/text2img",
-//   data: {
-//     key: "8R6EzKZpkTgH36gIM2aptYX3R3rEId72QTRftAcxkUw1WqsnoqyU0jJHzA5O",
-//     prompt: "batman",
-//     width: "512",
-//     height: "512",
-//     samples: "1",
-//     guidance_scale: 7.5,
-//     seed: null,
-//   },
-// };
-
 app.post("/image", async (req, res) => {
   console.log(1);
   body = {
-    key: "Z8mYTvNTbXPieTWYNL4bQloVBcY1L3T8X6XYHRvODyaIsqWupOXJhcoeNgCX",
+    key: "",
     prompt: req.body.mess,
     width: "512",
     height: "512",
