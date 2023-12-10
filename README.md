@@ -1,3 +1,5 @@
+# working
+write a prompt in the text box and click the search button, wait for some time, the model will generate your images and display on your screen
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
