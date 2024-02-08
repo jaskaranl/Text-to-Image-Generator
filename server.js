@@ -22,7 +22,7 @@ const upload = multer({ storage: storage }).single("file");
 app.post("/image", async (req, res) => {
   console.log(1);
   body = {
-    key: "",
+    key: "aYRuAf5ttFvOSVUZijSILlZ5nn0pZd27wbGvsLJXwR1DwhVLmyIOquse5V97",
     prompt: req.body.mess,
     width: "512",
     height: "512",
@@ -32,9 +32,15 @@ app.post("/image", async (req, res) => {
     seed: null,
   };
 
+  header = {
+    'Content-Type': 'application/json'
+  };
+
   const response = await axios.post(
-    "https://stablediffusionapi.com/api/v3/text2img",
-    body
+    "https://modelslab.com/api/v6/realtime/text2img",
+    body, {
+    headers: header
+  }
   );
   console.log(response.data);
   res.send(response.data);
